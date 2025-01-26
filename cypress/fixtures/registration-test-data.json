@@ -1,0 +1,67 @@
+{
+    "validUser": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "username": "johndoe",
+      "password": "Password123!",
+      "confirmPassword": "Password123!",
+      "gender": "Male",
+      "expectedResult": "Registration successful"
+    },
+    "invalidUsers": [
+      {
+        "firstName": "",
+        "lastName": "Doe",
+        "username": "janedoe",
+        "password": "Password123!",
+        "confirmPassword": "Password123!",
+        "gender": "Female",
+        "expectedResult": "First name is required"
+      },
+      {
+        "firstName": "Jane",
+        "lastName": "",
+        "username": "janedoe",
+        "password": "Password123!",
+        "confirmPassword": "Password123!",
+        "gender": "Female",
+        "expectedResult": "Last name is required"
+      },
+      {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "username": "",
+        "password": "Password123!",
+        "confirmPassword": "Password123!",
+        "gender": "Female",
+        "expectedResult": "Username is required"
+      },
+      {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "username": "janedoe",
+        "password": "",
+        "confirmPassword": "Password123!",
+        "gender": "Female",
+        "expectedResult": "Password is required"
+      },
+      {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "username": "janedoe",
+        "password": "Password123!",
+        "confirmPassword": "",
+        "gender": "Female",
+        "expectedResult": "Confirm password is required"
+      },
+      {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "username": "janedoe",
+        "password": "Password123!",
+        "confirmPassword": "Password123!",
+        "gender": "",
+        "expectedResult": "Gender is required"
+      }
+    ]
+  }
